@@ -2,9 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Build') {
             steps {
-                echo 'Hello World'
+                echo 'Building the code of Nginx'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing the Nginx'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploy to the Server'
             }
         }
     }
