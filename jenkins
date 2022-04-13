@@ -1,7 +1,7 @@
 Pipeline {
 	agent { label 'linux'}
 	tools{
-		maven '3.8.1'
+		maven '3.8.5'
 	}
 	stages{
 		stage('Example'){
